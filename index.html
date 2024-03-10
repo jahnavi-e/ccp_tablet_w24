@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skip-to-main">Skip to Main Content</a>
+        <nav>
+            <ul>
+                <li><a href = "index.html" class="active">Home</a></li>
+                <li><a href = "pets.html">Pets</a></li>
+                <li><a href = "travel.html">Travel</a></li>
+                <li><a href = "recipes.html">Recipes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <h1 class="glowing">TheHub</h1>
+        <div class="one-grid">
+        <div><p>Welcome to TheHub, your go-to destination for all things pets, recipes, and travel! Explore a world of captivating content where we cater to your love for furry companions, culinary delights, and globetrotting adventures. </p></div>
+        </div>
+        <div>
+            <div class="single-box"><p>Explore this website to get all the latest information about pets, travel, and recipes.</p></div>
+            <div class="uneven-two-grid">
+            <div class="text four"><p>The Pets page includes many fun pictures of super cute pets.</p></div>
+            <div class="one"><img src="images/miumiu_sleeping.jpeg" width="200" alt = "Silver gradient British shorthair cat sleeping on a bed"></div>
+            <div class="two"><img src="images/Monteverde_el_tigre_waterfalls.jpeg" width="200" alt = "Man standing in front of the El Tigre waterfalls with outstretched arms"></div>
+            <div class="text five"><p>The Travel page is your one-stop destination for the coolest travel locations.</p></div>
+            <div class="text six"><p>The Recipes page is the place to find your next favorite food.</p></div>
+            <div class="three"><img src="images/Zucchini_fritters_3.jpeg" width="200" alt = "Ingredients for zucchini fritters combined"></div>
+            </div>
+        </div>
+        <button onclick="supriseMe()">Surprise Me!</button>
+        <script>
+            function supriseMe() {
+                var randomLink = ["./pets.html#bacon","./pets.html#santa","./pets.html#lulu","./pets.html#miumiu","./travel.html#chiangmai","./travel.html#monteverde","./travel.html#rome","./travel.html#bangkok","./travel.html#nyc","./recipes.html#fritters","./recipes.html#soup","./recipes.html#wings"];
+                var randomIndex = Math.floor(Math.random() * randomLink.length);
+                location.href = randomLink[randomIndex];
+            }
+        </script>
+            <!-- Jackie Wolf -->
+    </main>
+    
+</body>
+</html>
